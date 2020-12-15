@@ -1,4 +1,5 @@
 const string =`
+欢迎来到我的频道，送给各位一个可爱的米老鼠呀，希望大家天天开心
 .mickey *{box-sizing: border-box;margin: 0px;padding: 0px;}
 .mickey *::before, .mickey *::after{box-sizing: border-box;}
 
@@ -222,29 +223,12 @@ body{
     margin-left: 30px;
     border-radius: 50%;
 }
-.face:hover > .eye{
-    visibility: hidden;
-}
-.face:hover > .heart{
-    visibility: visible;
-}
 
 .heart {
     position: absolute;
     left: 50%;
-    top: 50%;
-    margin-top: 210px;
+    top: 315px;
     animation: .7s infinite heart alternate-reverse;
-    visibility: hidden;
-}
-
-@keyframes heart {
-    from {
-        transform: translate(-50%, -50%) scale(1.0)
-    }
-    to {
-        transform: translate(-50%, -50%) scale(1.2)
-    }
 }
 
 .heart .h-left,.h-right,.h-bottom {
@@ -281,5 +265,24 @@ body{
     position: absolute;
     margin-left: 25px;
 }
+
+@keyframes heart {
+    from {
+        transform: translate(-50%, -50%) scale(1.0)
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1.2)
+    }
+}
+.heart{
+     visibility: hidden;
+}
+.face > .eye{
+    visibility: hidden;
+}
+.face > .heart{
+    visibility: visible;
+}
+你好美呀，mickey很喜欢你哟！
 `
 export default string

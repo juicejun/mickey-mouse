@@ -55,7 +55,7 @@ const player = {
     },
     fast : ()=>{
         player.pause()
-        player.time = 0
+        player.time = -1000
         player.play()
     }
 }
