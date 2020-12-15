@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+<div id="demo"></div>
+<style id="demo2"></style>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnSlow">慢速</button>
+    <button id="btnNormal">中速</button>
+    <button id="btnFast">快速</button>
+</div>
+<style>*{box-sizing: border-box;margin: 0px;padding: 0px;}
+    *::before,*::after{box-sizing: border-box;}
+    #buttons{
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    #buttons>button{
+        margin-bottom: 10px;
+        padding: 8px 16px;
+    }
+    #demo2{
+        display: none;
+    }
+    #demo{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        border: 1px solid blue;
+        overflow-y: auto;
+        z-index: 1;
+    }
+    #demo::-webkit-scrollbar{
+        display: none;
+    }
+    #html{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        /*width: 50vw;*/
+        /*height: 100%;*/
+        width: 100%;
+    }</style>
+
+
+
+<div id="html">
+    <div class="mickey">
+        <div class="head"></div>
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="face">
+            <div class="front left"></div>
+            <div class="front right"></div>
+            <div class="check left"></div>
+            <div class="check right"></div>
+            <div class="down"></div>
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="noseline"></div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+                <div class="bottom"></div>
+                <div class="tong">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="heart left">
+                <div class="h-left"></div>
+                <div class="h-right"></div>
+                <div class="h-bottom"></div>
+            </div>
+            <div class="heart right">
+                <div class="h-left"></div>
+                <div class="h-right"></div>
+                <div class="h-bottom"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/test.e98b79dd.js"></script>
+</body>
+</html>
